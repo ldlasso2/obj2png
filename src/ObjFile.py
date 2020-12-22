@@ -133,7 +133,7 @@ class ObjFile:
                 try:
                     v.append(int(nn)) 
                 except:
-                    v.append(int(nn[:-1])
+                    v.append(int(nn[:-1]))
             return v
         else:
             return int(n)
