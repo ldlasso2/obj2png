@@ -130,7 +130,10 @@ class ObjFile:
         if isinstance(n,list):
             v=[]
             for nn in n:
-                v.append(int(nn))
+                Try:
+                    v.append(int(nn)) 
+                Except:
+                    v.append(int(nn[:-1])
             return v
         else:
             return int(n)
